@@ -8,31 +8,35 @@ uint8_t *serialize(void *data, struct descriptor (*serializer)(const void *, cha
 
 #define get_serializer(name) name##ToDescriptor
 
+#define TYPE_char INT8
 #define TYPE_int8_t INT8
 #define TYPE_uint8_t INT8
+#define TYPE_short INT16
 #define TYPE_int16_t INT16
 #define TYPE_uint16_t INT16
 #define TYPE_int INT32
 #define TYPE_int32_t INT32
 #define TYPE_uint32_t INT32
+#define TYPE_long INT64
 #define TYPE_int64_t INT64
 #define TYPE_uint64_t INT64
 #define TYPE_float FLOAT32
 #define TYPE_double FLOAT64
-#define TYPE_char INT8
 
+#define ACCESS_char int8
 #define ACCESS_int8_t int8
 #define ACCESS_uint8_t int8
+#define ACCESS_short int16
 #define ACCESS_int16_t int16
 #define ACCESS_uint16_t int16
 #define ACCESS_int int32
 #define ACCESS_int32_t int32
 #define ACCESS_uint32_t int32
+#define ACCESS_long int64
 #define ACCESS_int64_t int64
 #define ACCESS_uint64_t int64
 #define ACCESS_float float32
 #define ACCESS_double float64
-#define ACCESS_char int8
 
 #define test(a) a
 
